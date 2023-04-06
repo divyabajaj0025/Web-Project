@@ -60,5 +60,26 @@ footer{
 }
 
 .content{
+width:100%;
+}
+
+img{
+  float:right;
+  border: solid;
+  margin-right: 15px;
+}
+table{
+  clear:both;
+  table-layout: auto;
+  margin-left: 15px;
+  border-radius: 15px;
+  border:dashed;
+}
+td,th{text-align: center;}
+/*td, th{
+  border: dashed;
+  margin: 0px;
+}*/
+.text{
   text-align: center;
 }
