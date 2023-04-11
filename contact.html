@@ -4,6 +4,21 @@
     <title>Contact Us</title>
     <link rel="shortcut icon" href="shortcut-icon.jfif">
     <link rel="stylesheet" href="styles.css">
+    <script>
+      function validate(){
+        var username = document.signup.uname.value;
+        var name = document.signup.name.value;
+        var dateofbirth = document.signup.dob.value;
+        var password = document.signup.pwd.value;
+        if(username==""||name==""||dateofbirth==""||password=="")
+        {
+          alert("Fill all the fields")
+        }
+        else{
+          alert("Form submitted successfully")
+        }
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -18,7 +33,7 @@
       </ul>
     </header>
     <div class = "content">
-      <form>
+      <form name="signup">
         <fieldset>
           <legend>Sign Up</legend>
         <table>
@@ -39,7 +54,7 @@
           <td><input type="password" name="pwd"></td>
         </tr>
         <tr>
-          <td colspan="2" align="center"><input type="button" value="Submit"></td>
+          <td colspan="2" align="center"><input type="button" value="Submit" onclick="validate();"></td>
         </tr>
         </table>
       </fieldset>
